@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакт - Футболна Академия Кючук Париж Пловдив</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo-area">
+    <img src="images/logo.png" alt="Лого на Футболна Академия Кючук Париж Пловдив">
+    <div class="logo-text">ФА Кючук Париж Пловдив</div>
+  </div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <ul id="navMenu"><li><a href="index.html">Начало</a></li>
+<li><a href="index.html#za-nas">За нас</a></li>
+<li><a href="index.html#zashto">Защо нас</a></li>
+<li><a href="index.html#postizhenia">Постижения</a></li>
+<li><a href="trenirovki.html">Тренировки</a></li>
+<li><a href="trenyori.html">Треньори</a></li>
+<li><a href="galeriya.html">Галерия</a></li>
+<li><a href="kontakt.html" class="active">Контакт</a></li>
+</ul>
+</nav>
+
+
+
+<main>
+  <h1 class="page-title">Контакти</h1>
+  <div class="contact-box">
+    <p><strong>Телефон:</strong> <a href="tel:+359885706446">+359885706446</a></p>
+    <p><strong>Facebook:</strong> <a href="https://www.facebook.com/futbolna.akademia.kucuk.pariz.plovdiv/" target="_blank">Футболна Академия Кючук Париж Пловдив</a></p>
+    <p><strong>Карта:</strong> <a href="https://www.google.com/maps/search/?api=1&query=%D0%A4%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BD%D0%BE+%D0%B8%D0%B3%D1%80%D0%B8%D1%89%D0%B5+%D0%98%D0%BD%D0%B1%D0%B5%D1%82%2C+%D1%83%D0%BB.+%E2%80%9E%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8+%D0%98%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%BE%D0%B2%E2%80%9C+31%2C+4004+%D0%9F%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2" target="_blank">Виж игрището</a></p>
+  </div>
+</main>
+
+
+<footer>
+  <p>📍 Футболно игрище Инбет, ул. „Георги Икономов“ 31, 4004 Пловдив | ☎ +359885706446</p>
+  <p>© 2026 Футболна Академия Кючук Париж Пловдив</p>
+  <p><a href="https://www.facebook.com/futbolna.akademia.kucuk.pariz.plovdiv/" target="_blank">Facebook страница</a></p>
+</footer>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("navMenu");
+  menu.classList.toggle("show");
+}
+
+document.querySelectorAll("#navMenu a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    document.getElementById("navMenu").classList.remove("show");
+  });
+});
+</script>
+
+</body>
+</html>

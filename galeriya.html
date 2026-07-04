@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерия - Футболна Академия Кючук Париж Пловдив</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo-area">
+    <img src="images/logo.png" alt="Лого на Футболна Академия Кючук Париж Пловдив">
+    <div class="logo-text">ФА Кючук Париж Пловдив</div>
+  </div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <ul id="navMenu"><li><a href="index.html">Начало</a></li>
+<li><a href="index.html#za-nas">За нас</a></li>
+<li><a href="index.html#zashto">Защо нас</a></li>
+<li><a href="index.html#postizhenia">Постижения</a></li>
+<li><a href="trenirovki.html">Тренировки</a></li>
+<li><a href="trenyori.html">Треньори</a></li>
+<li><a href="galeriya.html" class="active">Галерия</a></li>
+<li><a href="kontakt.html">Контакт</a></li>
+</ul>
+</nav>
+
+
+<main>
+  <h1 class="page-title">Галерия</h1>
+  <div class="gallery-grid">
+    
+<div class="gallery-card">
+  <img src="images/gallery_young_1.png" alt="Футбол 5">
+  <div class="gallery-caption">Футбол 5 — набори 2018, 2019, 2020, 2021</div>
+</div>
+<div class="gallery-card">
+  <img src="images/gallery_young_2.png" alt="Футбол 5">
+  <div class="gallery-caption">Футбол 5 — набори 2018, 2019, 2020, 2021</div>
+</div>
+<div class="gallery-card tall">
+  <img src="images/gallery_young_3.png" alt="Футбол 5">
+  <div class="gallery-caption">Футбол 5 — набори 2018, 2019, 2020, 2021</div>
+</div>
+<div class="gallery-card">
+  <img src="images/gallery_old_1.png" alt="Футбол 7">
+  <div class="gallery-caption">Футбол 7 — набори 2016, 2015</div>
+</div>
+
+
+    
+<div class="gallery-card wide">
+  <img src="images/nabor-2009.png" alt="Набор 2009">
+  <div class="gallery-caption">Футбол 11 — набор 2009</div>
+</div>
+
+  </div>
+</main>
+
+<footer>
+  <p>📍 Футболно игрище Инбет, ул. „Георги Икономов“ 31, 4004 Пловдив | ☎ +359885706446</p>
+  <p>© 2026 Футболна Академия Кючук Париж Пловдив</p>
+  <p><a href="https://www.facebook.com/futbolna.akademia.kucuk.pariz.plovdiv/" target="_blank">Facebook страница</a></p>
+</footer>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("navMenu");
+  menu.classList.toggle("show");
+}
+
+document.querySelectorAll("#navMenu a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    document.getElementById("navMenu").classList.remove("show");
+  });
+});
+</script>
+
+</body>
+</html>

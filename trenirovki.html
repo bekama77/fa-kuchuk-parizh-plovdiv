@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тренировки - Футболна Академия Кючук Париж Пловдив</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo-area">
+    <img src="images/logo.png" alt="Лого на Футболна Академия Кючук Париж Пловдив">
+    <div class="logo-text">ФА Кючук Париж Пловдив</div>
+  </div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <ul id="navMenu"><li><a href="index.html">Начало</a></li>
+<li><a href="index.html#za-nas">За нас</a></li>
+<li><a href="index.html#zashto">Защо нас</a></li>
+<li><a href="index.html#postizhenia">Постижения</a></li>
+<li><a href="trenirovki.html" class="active">Тренировки</a></li>
+<li><a href="trenyori.html">Треньори</a></li>
+<li><a href="galeriya.html">Галерия</a></li>
+<li><a href="kontakt.html">Контакт</a></li>
+</ul>
+</nav>
+
+
+<main>
+  <h1 class="page-title">Тренировки и групи</h1>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">⚽</div>
+      <h3>Футбол 5</h3>
+      <p><strong>Набори:</strong> 2018, 2019, 2020, 2021</p>
+      <p><strong>Треньор:</strong> Минчо Минчев</p>
+      <p class="group-note">Това са най-малките футболисти в академията.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🏃</div>
+      <h3>Футбол 7</h3>
+      <p><strong>Набори:</strong> 2016, 2015</p>
+      <p><strong>Треньор:</strong> Марио Георгиев</p>
+    </div>
+    <div class="card">
+      <div class="icon">🥅</div>
+      <h3>Футбол 9</h3>
+      <p><strong>Набори:</strong> 2014, 2013, 2012</p>
+      <p><strong>Треньор:</strong> Марио Георгиев</p>
+    </div>
+    <div class="card">
+      <div class="icon">🏆</div>
+      <h3>Футбол 11</h3>
+      <p><strong>Набори:</strong> 2011, 2010, 2009</p><p class="group-note">Включително представителна група набор 2009.</p>
+      <p><strong>Треньор:</strong> Марио Георгиев</p>
+    </div>
+    <div class="card">
+      <div class="icon">📍</div>
+      <h3>Място</h3>
+      <p>Футболно игрище Инбет, ул. „Георги Икономов“ 31, 4004 Пловдив.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>📍 Футболно игрище Инбет, ул. „Георги Икономов“ 31, 4004 Пловдив | ☎ +359885706446</p>
+  <p>© 2026 Футболна Академия Кючук Париж Пловдив</p>
+  <p><a href="https://www.facebook.com/futbolna.akademia.kucuk.pariz.plovdiv/" target="_blank">Facebook страница</a></p>
+</footer>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("navMenu");
+  menu.classList.toggle("show");
+}
+
+document.querySelectorAll("#navMenu a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    document.getElementById("navMenu").classList.remove("show");
+  });
+});
+</script>
+
+</body>
+</html>

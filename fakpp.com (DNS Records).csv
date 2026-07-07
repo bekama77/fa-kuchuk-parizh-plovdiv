@@ -1,0 +1,5 @@
+name,ttl,type,value
+"fakpp.com","3600","NETLIFY","fakpp.netlify.app"
+"www.fakpp.com","3600","NETLIFY","fakpp.netlify.app"
+"fakpp.com","3600","NETLIFYv6","fakpp.netlify.app"
+"www.fakpp.com","3600","NETLIFYv6","fakpp.netlify.app"
